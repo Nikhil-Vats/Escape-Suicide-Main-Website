@@ -1,13 +1,14 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
         * {
-            box-sizing: border-box;
-            font-family: 'Amatic SC', cursive;
+            box-sizing: border-box;           
+
         }
         body {
             display: flex;
             flex-direction: column;
             overflow: hidden;
+            font-family: 'Amatic SC', cursive;
         }
         #header {
             position: fixed;
