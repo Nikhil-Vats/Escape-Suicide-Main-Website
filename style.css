@@ -1,0 +1,221 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Amatic SC', cursive;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        #header {
+            position: fixed;
+            top:0;
+            left: 0;
+            width: 100vw;
+            height: 10vh;
+            background-color: #1a237e;
+            color: white;
+            transition: 0.3s ease-in-out;
+            text-align: center;
+        }
+        #header:hover {
+            background-color: black;
+            color: white;
+        }
+        #header p {
+            margin: 1vw;
+            font-size: 3vw;
+        }
+        #logo {
+            top:0.5vw;
+            left:1vw;
+            position: absolute;
+        }
+        #logo img {
+            width: 4vw;
+            height: 8vh;
+        }
+        #container {
+            top:10vh;
+            left: 0;
+            position: absolute;
+            background-color: whitesmoke;
+            width: 100vw;
+            height: 80vh;
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+        }
+        #main_content {
+            margin: 35vh auto;
+            text-align: center;
+        }
+        #main_content h1 {
+            font-size: 2vw;
+        }
+        #homepage_content {
+            margin: 30vh auto;
+            text-align: center;
+        }
+        #homepage_content p {
+            margin-left: 10vw;
+            margin-right: 10vw;
+            margin-bottom: 1vw;
+            font-size: 3vw;
+            font-weight: 500;
+        }
+        #research_button a:link,#research_button a:visited {
+            width: 10vw;
+            height: 4vw;
+            background-color: white;
+            color: black;
+            border-radius: 4px;
+            border: 1px solid black;
+            padding: 0.5vw;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s ease-in;
+            font-size: 1.8vw;
+            font-weight: bold;
+        }
+
+        #research_button a:hover,#research_button a:active {
+            background-color: black;
+            color: white;
+        }
+        #footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100vw;
+            height: 10vh;
+            background-color:#1a237e;
+            color: white;
+            transition: 0.3s ease-in-out;
+        }
+        #footer:hover {
+            background-color: black;
+            color: white;
+        }
+        #footer p {
+            margin: 1vw;
+            font-size: 2vw;
+        }
+        #icons_left {
+            position: absolute;
+            margin:10vh 0;
+            left: 2vw;
+            height: 90%;
+            width: 10vw;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+/*            background-color: #8866D0;*/
+/*            border: 2px solid #5680E9;*/
+            border-radius: 2vw;
+        }
+        #icons_right {
+            position: absolute;
+            margin: 10vh 0;
+            right: 2vw;
+            height: 90%;
+            width: 10vw;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+/*            background-color: #8866D0;*/
+/*            border: 2px solid #5680E9;*/
+            border-radius: 2vw;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .icons {
+            margin: 5vh auto;
+        }
+        #icon1,#icon2,#icon3,#icon4,#icon5,#icon6 {
+            width: 7vw;
+            height: 7vw;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 50%;
+            margin: 5vh auto;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            font-size: 1.5vw;
+            text-align: center;
+            padding: 2.6vw 0;
+            color: black;
+            font-weight: bolder;
+            transform: scale(0.9);
+        }
+        #icon1:hover ,#icon2:hover ,#icon3:hover ,#icon4:hover ,#icon5:hover ,#icon6:hover {
+            background-color: black;
+            transform: scale(1);
+            color: white;
+            font-weight: bold;
+        }
+        #icon1:hover a,#icon2:hover a,#icon3:hover a,#icon4:hover a,#icon5:hover a,#icon6:hover a {
+            color: white;
+        }
+        .social-container {
+            position: absolute;
+            top: 0.5vw;
+            right: 1vw;
+            text-align: center;
+                }
+
+        .social-icons {
+            padding: 0;
+            list-style: none;
+        }
+        .social-icons li {
+            display: inline-block;
+            margin: 0.15em;
+            position: relative;
+            font-size: 1em;
+        }
+        .social-icons i {
+            color: #fff;
+            position: absolute;
+            top: 16px;
+            left: 18px;
+            transition: all 265ms ease-out;
+        }
+        .social-icons a {
+            display: inline-block;
+        }
+        .social-icons a:before {
+            transform: scale(1);
+            -ms-transform: scale(1);
+            -webkit-transform: scale(1);
+            content: " ";
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            display: block;
+            background: -webkit-linear-gradient(45deg, #000000, #282828);
+            transition: all 265ms ease-out;
+        }
+        .social-icons a:hover:before {
+            transform: scale(0);
+            transition: all 265ms ease-in;
+        }
+        .social-icons a:hover i {
+            transform: scale(2.2);
+            -ms-transform: scale(2.2);
+            -webkit-transform: scale(2.2);
+            color: darkblue;
+            background: linear-gradient(45deg, #1a237e, #536dfe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 265ms ease-in;
+        }
