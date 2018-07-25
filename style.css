@@ -137,18 +137,18 @@
         }
         #icons_left {
             position: absolute;
-            margin:10vh 0;
+            margin: 0;
             left: 2vw;
-            height: 90%;
+            height: 100%;
             width: 10vw;
             display: table;
             border-radius: 2vw;
         }
         #icons_right {
             position: absolute;
-            margin: 10vh 0;
+            margin: 0;
             right: 2vw;
-            height: 90%;
+            height: 100%;
             width: 10vw;
             display: table;
             border-radius: 2vw;
