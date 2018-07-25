@@ -24,6 +24,7 @@
             color: white;
             transition: 0.3s ease-in-out;
             text-align: center;
+            display: table;
         }
 
         #loading {
@@ -50,19 +51,21 @@
         #header:hover {
             background-color: black;
             color: white;
+            
         }
-        #header p {
-            margin: 1vw;
+        #header div {
+            display: table-cell;
             font-size: 3vw;
+            vertical-align: middle;
         }
         #logo {
-            top:0.5vw;
-            left:1vw;
             position: absolute;
+            line-height: 9vh;
         }
         #logo img {
             width: 4vw;
             height: 8vh;
+            vertical-align: middle;
         }
         #container {
             top:10vh;
@@ -121,14 +124,16 @@
             background-color:#1a237e;
             color: white;
             transition: 0.3s ease-in-out;
+            display: table;
         }
         #footer:hover {
             background-color: black;
             color: white;
         }
         #footer p {
+            display: table-cell;
             text-align: center;
-            margin: 1vw;
+            vertical-align: middle;
             font-size: 2vw;
         }
         #icons_left {
@@ -194,56 +199,4 @@
         #icon1:hover a,#icon2:hover a,#icon3:hover a,#icon4:hover a,#icon5:hover a,#icon6:hover a {
             color: white;
         }
-        .social-container {
-            position: absolute;
-            top: 0.5vw;
-            right: 1vw;
-            text-align: center;
-                }
-
-        .social-icons {
-            padding: 0;
-            list-style: none;
-        }
-        .social-icons li {
-            display: inline-block;
-            margin: 0.15em;
-            position: relative;
-            font-size: 1em;
-        }
-        .social-icons i {
-            color: #fff;
-            position: absolute;
-            top: 16px;
-            left: 18px;
-            transition: all 265ms ease-out;
-        }
-        .social-icons a {
-            display: inline-block;
-        }
-        .social-icons a:before {
-            transform: scale(1);
-            -ms-transform: scale(1);
-            -webkit-transform: scale(1);
-            content: " ";
-            width: 50px;
-            height: 50px;
-            border-radius: 100%;
-            display: block;
-            background: -webkit-linear-gradient(45deg, #000000, #282828);
-            transition: all 265ms ease-out;
-        }
-        .social-icons a:hover:before {
-            transform: scale(0);
-            transition: all 265ms ease-in;
-        }
-        .social-icons a:hover i {
-            transform: scale(2.2);
-            -ms-transform: scale(2.2);
-            -webkit-transform: scale(2.2);
-            color: darkblue;
-            background: linear-gradient(45deg, #1a237e, #536dfe);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: all 265ms ease-in;
-        }
+        @media only and (max-width:)
