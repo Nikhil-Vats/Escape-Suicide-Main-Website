@@ -6,7 +6,11 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div id="loading"></div>
+        <div id="loader">    
+        <div id="loading"></div>
+                <div id="header_loader"></div>
+        <div id="footer_loader"></div>
+    </div>
     <div id="myDiv">
     <div id="header">
         <div id="logo"><img src="logo.png"></div>
@@ -39,12 +43,6 @@
         <p>Copyright &copy; 2018 Escape Suicide, All rights reserved.</p>
     </div>
     </div>
-    <script type="text/javascript">
-        setTimeout( function() {
-            document.getElementById("loading").style.display = "none" 
-            document.getElementById("myDiv").style.display = "block";
-        },1000);   
-        
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

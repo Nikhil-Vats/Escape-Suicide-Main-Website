@@ -11,6 +11,60 @@
             overflow: hidden;
             font-family: "Amatic SC", cursive;
         }
+        #loading {
+            position: absolute;
+            top:40vh;
+            left: 45vw;
+            width: 10vw;
+            height: 10vw;
+            display: block;
+            border: 2vw solid black;
+            border-top-color: #1a237e;
+            border-bottom-color: #1a237e;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            z-index: 20;
+        }
+        @keyframes spin {
+            to {
+                transform: rotate(0deg);
+            }
+            from {
+                transform: rotate(360deg);
+            }
+        }
+        #header_loader{
+            position: fixed;
+            height: 10vh;
+            width: 0vw;
+            border:1px solid transparent;
+            top:0;
+            left:0;
+            border-bottom-color: black;
+            animation: border 1s linear;
+            animation-iteration-count: 1;
+            animation-direction: reverse;
+        } 
+        #footer_loader {
+            position: fixed;
+            height: 10vh;
+            width: 0vw;
+            border:1px solid transparent;
+            bottom:0;
+            left: 0;
+            border-top-color: black;
+            animation: border 1s linear;
+            animation-iteration-count: 1;
+            animation-direction: reverse;
+        }
+        @keyframes border {
+            to {
+                width: 0;
+            }
+            from {
+                width: 100vw;
+            }
+        }
         #myDiv {
             display: none;
         }
@@ -25,28 +79,6 @@
             transition: 0.3s ease-in-out;
             text-align: center;
             display: table;
-        }
-
-        #loading {
-            position: absolute;
-            top:40vh;
-            left: 45vw;
-            width: 10vw;
-            height: 10vw;
-            display: block;
-            border: 2vw solid black;
-            border-top-color: #1a237e;
-            border-bottom-color: #1a237e;
-            border-radius: 50%;
-            animation: spin 1.5s linear infinite;
-        }
-        @keyframes spin {
-            to {
-                transform: rotate(0deg);
-            }
-            from {
-                transform: rotate(360deg);
-            }
         }
         #header:hover {
             background-color: black;
