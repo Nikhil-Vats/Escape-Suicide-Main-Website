@@ -236,38 +236,56 @@
             visibility:hidden;
             transition: 0.3s;
             display: table;
+            margin: 0;
+            padding: 0;
         }
         #sidenav ul {
             display: table-cell;
             vertical-align: middle;
             margin: 0;
             padding: 0;
+            width: 100vw;
         }
         #sidenav li {
-            width: 100%;
+            width: 100vw;
             position: relative;
-            font-size:4vw;
+            height: 12vh;
+            font-size:5vw;
             border-radius: 20px;
             vertical-align: middle;
             margin: 0 auto 3vh;
             padding: 1vw 0;
         }
         #closeButton {
-            width: 3vw;
-            height: 3vw;
+            width: 6vw;
+            height: 6vw;
             right: 1vw;
             top: 1vw;
             position: absolute;
         }   
+        #sidenav a {
+            width: 100vw;
+        }
         @media only and (max-width: 800px) {
             .icon1,.icon2,.icon3,.icon4,.icon5,.icon6 {
                 border: none;
-                width:100%;
+                width:100vw;
                 height: 100%;
                 border-radius: 0%;
+                width: 7vw;
+                margin: 0 0 5vh;
             }
             .icons_list a {
                width: 100%;
-               height: 7vh;    
+               height: 15vh;    
+            }
+            #icons_right, #icons_left {
+                margin: 0;
+                left: 0;
+                right:0;
+            }
+            .icons {
+                margin: 0;
+                padding: 0;
             }
         }
