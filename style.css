@@ -116,7 +116,7 @@
             font-size: 2vw;
         }
         #homepage_content {
-            margin: 30vh auto;
+            margin: 20vh auto;
             text-align: center;
         }
         #homepage_content p {
@@ -254,11 +254,11 @@
             border-radius: 20px;
             vertical-align: middle;
             margin: 0 auto 3vh;
-            padding: 1vw 0;
+            padding: 2.5vw 0;
         }
         #closeButton {
-            width: 6vw;
-            height: 6vw;
+            width: 5vw;
+            height: 5vw;
             right: 1vw;
             top: 1vw;
             position: absolute;
@@ -287,5 +287,13 @@
             .icons {
                 margin: 0;
                 padding: 0;
+            }
+            #header p {
+                font-size: 890px;
+            }
+            #footer p {
+                display: table-cell;
+            font-size: 80px;
+            vertical-align: middle;
             }
         }
