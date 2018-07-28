@@ -1,4 +1,4 @@
-        window.onload =  function() {
+        window.onload = function() {
             document.getElementById("loading").style.display = "none" 
             document.getElementById("myDiv").style.display = "block";
         };
@@ -31,7 +31,7 @@
                     var logo = document.getElementById('logo');
                     logo.removeAttribute('onclick', 'showSideNav()');
                     if(document.getElementById('sidenav'))
-                    document.getElementById('sidenav').style.visibility = 'visible';
+                    document.getElementById('sidenav').style.visibility = 'hidden';
                     for(i=0;i<links.length;i++) {
                         if(i<3) {
                             iconsList[0].appendChild(links[i]);
