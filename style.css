@@ -95,7 +95,7 @@
         }
         #logo img {
             width: 4vw;
-            height: 8vh;
+            max-height: 8vh;
             vertical-align: middle;
         }
         #container {
@@ -199,7 +199,7 @@
             vertical-align: middle;
             margin: 0 auto;
         }
-        #icon1,#icon2,#icon3,#icon4,#icon5,#icon6 {
+        .icon1,.icon2,.icon3,.icon4,.icon5,.icon6 {
             width: 7vw;
             height: 7vw;
             background-color: white;
@@ -215,13 +215,57 @@
             font-weight: bolder;
             transform: scale(0.9);
         }
-        #icon1:hover ,#icon2:hover ,#icon3:hover ,#icon4:hover ,#icon5:hover ,#icon6:hover {
+        .icon1:hover ,.icon2:hover ,.icon3:hover ,.icon4:hover ,.icon5:hover ,.icon6:hover {
             background-color: black;
             transform: scale(1);
             color: white;
             font-weight: bold;
         }
-        #icon1:hover a,#icon2:hover a,#icon3:hover a,#icon4:hover a,#icon5:hover a,#icon6:hover a {
+        .icon1:hover a,.icon2:hover a,.icon3:hover a,.icon4:hover a,.icon5:hover a,.icon6:hover a {
             color: white;
         }
-        @media only and (max-width:)
+        #sidenav {
+            height: 100vh;
+            width:100vw;
+            top:0;
+            left:-11.5vw;
+            background-color:#1a237e;
+            color:white;
+            position: absolute;
+            z-index: -50;  
+            visibility:hidden;
+            transition: 0.3s;
+            display: table;
+        }
+        #sidenav ul {
+            display: table-cell;
+            vertical-align: middle;
+            margin: 0;
+            padding: 0;
+        }
+        #sidenav li {
+            width: 100%;
+            position: relative;
+            font-size:2vw;
+            border-radius: 20px;
+            vertical-align: middle;
+        }
+        #closeButton {
+            width: 3vw;
+            height: 3vw;
+            right: 1vw;
+            top: 1vw;
+            position: absolute;
+        }   
+        @media only and (max-width: 800px) {
+            .icon1,.icon2,.icon3,.icon4,.icon5,.icon6 {
+                border: none;
+                width:100%;
+                height: 100%;
+                border-radius: 0%;
+            }
+            .icons_list a {
+               width: 100%;
+               height: 6vh;    
+            }
+        }
