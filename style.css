@@ -288,12 +288,7 @@
                 margin: 0;
                 padding: 0;
             }
-            #header p {
-                font-size: 890px;
-            }
-            #footer p {
-                display: table-cell;
-            font-size: 80px;
-            vertical-align: middle;
+            body {
+                font-size: 5vw;
             }
         }
